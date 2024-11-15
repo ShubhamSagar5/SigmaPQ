@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  
+    background-image: url("./photo.jpg");
+    background-size: cover;
+}
+
+
+.sidebar_menu {
+width: 300px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+    position: relative;
+    left: -350px;
+    /* transition: left 2s ease-in; */
+    transition: all 0.2s linear;
+}
+
+.btn_one {
+    line-height: 2px;
+    font-size:25px;
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+
+
+.logo {
+    position: relative;
+    left: 70px;
+    top: 5px;
+}
+
+.logo  a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+.btn_two {
+    position: absolute;
+    top: 15px;
+    left: 250px;
+}
+
+.social_media > ul  {
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+}
+ ul > a > i {
+    padding: 2px;
+    font-size: 3xl;
+    /* text-decoration: none; */
+    color: white;
+    /* opacity: 0.5; */
+ }
+
+ ul > a :hover {
+    transform: scale(2);
+    opacity: 1;
+ }
+
+ .menu {
+    height: 90vh;
+    margin-top: 30px;
+    gap: 5px;
+    width: 100%;
+ }
+.menu > ul  {
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 10px;
+    
+}
+
+.menu > ul > li > a , i {
+     text-decoration: none;
+     color: white;
+    margin-left:20px ;
+}
+
+.menu > ul :hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+  
+
+}
+
+.menu > ul > li  {
+    padding: 10px;
+}
+
+#check:checked ~ .sidebar_menu  {
+    left: 0;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .btn_one {
+    opacity: 0;
+}
