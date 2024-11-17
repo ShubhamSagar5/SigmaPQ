@@ -10,12 +10,14 @@ body {
 .main{
     display: flex;
     height: 100vh;
+    padding: 0.5rem;
 }
 
 .sidebar{
 width: 350px;
 border-radius: 1rem;
 background-color: black;
+margin-right: 0.5rem;
 }
 
 
@@ -67,4 +69,141 @@ background-color: black;
 .nav-option a {
     text-decoration: none;
     color: #fff;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+}
+
+.your-lib{
+    display: flex;
+    justify-content: space-between;
+    
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.left img{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.left{
+    display: flex;
+    gap: 15px;
+    opacity: 0.5;
+}
+.left a {
+    text-decoration: none;
+    color: white;
+}
+
+.left:hover{
+    opacity: 1;
+}
+
+.right {
+    margin-right: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+.boxes {
+    height:100vh;
+}
+
+.boxes .box {
+    background-color: #232323;
+    margin: 0.5rem;
+    border-radius: 0.75rem;
+}
+.box {
+    padding: 0.5rem;
+    margin-bottom:1rem ;
+}
+.box-p1 {
+    margin:1rem 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.box-p2 {
+    margin:1rem 0;
+}
+
+.box button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    opacity: 0.75;
+    
+}
+
+.box button:hover{
+    opacity: 1;
+    cursor: pointer;
+} 
+
+
+.main-content {
+    overflow: auto;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    padding: 0.5rem;
+}
+
+.navbar-option-1 {
+       display: flex; 
+       gap: 1rem;
+    
+}
+
+.img-size {
+    height: 20px;
+}
+.img-1,.img-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    padding: 0.2rem;
+    border-radius: 100%;
+}
+
+.img:hover{
+    background-color: #000;
+    cursor: pointer;
+} 
+
+.navbar-btn {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+   margin-right: 0.5rem;
+    opacity: 0.75;
+}
+
+.navbar-btn:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.navbar-btn-dark{
+    background-color: #000;
+    color: white;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
 }
