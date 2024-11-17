@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    font-family: "Montserrat",sans-serif;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+background-color: blue;
+width: 350px;
+}
+
+
+.main-content {
+    background-color: red;
+    flex: 1;
+}
+
+
+.music-player{
+    background-color: green;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+
+}
