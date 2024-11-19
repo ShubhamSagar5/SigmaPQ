@@ -10,6 +10,7 @@
       
       #box1:hover {
         width: 600px;
+        height: 600px;
       }
       
       /* Qs2. Using transform, move box2 200px to the right  & 
@@ -19,7 +20,11 @@
         width: 100px;
         height: 100px;
         background: red;
-        transform: translate(200px ,200px) rotate(90deg);
+        transition: 2s ease-in ;
+      }
+      #box2:hover{
+        transform: translateY(100px) ;
+        
       }
       
       /* Qs3. Using transform, skew box3 20deg along the x axis.*/
@@ -28,7 +33,23 @@
         width: 100px;
         height: 100px;
         background: lightblue;
-        transform: skewx(20deg) ;
+        transform: skewx(0deg) ;
+        animation: scroll 2s linear infinite normal;
+      }
+
+      @keyframes scroll {
+        0%{
+          transform:translateY(0) ;
+          background-color: aqua;
+        }
+        50%{
+          transform: translateY(100px);
+          background-color: black;
+        }
+        100%{
+          transform: translateY(0);
+          background-color: red;
+        }
       }
       
       /* Qs4. Set a 2px horizontal & 2px vertical, green shadow 
@@ -50,5 +71,5 @@
         background: pink;
         background-image: url(./avatar.jpg);
         background-size: cover;
-        opacity: 50%;
+        opacity: 0.5;
       }
