@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+</head>
+<body>
+
+    <%= chatData.from %>
+    <form method="post" action="/chat/<%= chatData.id %>/edit?_method=Patch">
+        <label for="from">From : <input type="text" name="from" id="from" value=<%= chatData.from %>> </label>
+        <br><br>
+        <label for="to">To : <input type="text" name="to" id="to" value=<%= chatData.to %>> </label>
+        <br><br>
+        <label for="msg">Message : <input type="text" name="msg" id="msg" value= <%= chatData.msg %>> </label>
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

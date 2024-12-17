@@ -1,0 +1,9 @@
+body {
+    background-color: bisque;
+}
+
+
+.form{
+    display: flex;
+    gap: 10px;
+}
