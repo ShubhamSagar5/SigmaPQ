@@ -6,6 +6,8 @@ import AmazonCard from './AmazonCard'
 import LikeButton from './LikeButton'
 import Todo from './Todo'
 import Lottery from './Lottery'
+import SearchWeather from './SearchWeather'
+import Weather from './Weather'
 
 function App () {
   return (
@@ -15,7 +17,8 @@ function App () {
       <LikeButton/>
       <Todo/> */}
 
-      <Lottery/>
+      {/* <Lottery/> */}
+      <Weather/>
     </div>
   )
 }
